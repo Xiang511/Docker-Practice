@@ -30,4 +30,17 @@ docker start 75da352166b1
 
 docker rm 75da352166b1
 # 刪除容器 ID 為 75da352166b1 的容器
+
+
+docker tag express-mvc hsiang511/docker-practice:express-mvc
+# 將名為 express-mvc 的 Docker Image 標記為 hsiang511/docker-practice:express-mvc
+
+docker push hsiang511/docker-practice:express-mvc
+# 將標記為 hsiang511/docker-practice:express-mvc 的 Docker Image 推送到 Docker Hub
+
+docker pull hsiang511/docker-practice:express-mvc
+# 從 Docker Hub 拉取標記為 hsiang511/docker-practice:express-mvc 的 Docker Image
+
+docker run -p 3005:3000 -d IMAGE ID
+
 ```
